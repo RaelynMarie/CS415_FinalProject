@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+<!--      <Button fx:id="query1Button" layoutX="30.0" layoutY="50.0" mnemonicParsing="false" onAction="#query1ButtonClick" prefHeight="26.0" prefWidth="104.0" text="Query 1" />-->
+      <TableView fx:id="booksTableView" layoutX="13.0" layoutY="158.0" prefHeight="435.0" prefWidth="1045.0">
+        <columns>
+          <TableColumn fx:id="ISBNTableColumn" prefWidth="117.76295375823975" text="ISBN" />
+          <TableColumn fx:id="titleTableColumn" prefWidth="494.6117706298828" text="title" />
+            <TableColumn fx:id="genreTableColumn" prefWidth="141.3157958984375" text="genre" />
+            <TableColumn fx:id="authorIDTableColumn" prefWidth="98.667724609375" text="authorID" />
+            <TableColumn fx:id="publisherIDTableColumn" prefWidth="86.66778564453125" text="publisherID" />
+            <TableColumn fx:id="publishDateTableColumn" prefWidth="108.332275390625" text="publishDate" />
+        </columns>
+      </TableView>
+      <Label fx:id="showQuery1" layoutX="36.0" layoutY="101.0" text="Text that Changes" />
+      <Button fx:id="query1Button" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#query1ButtonClick" text="Run the query" />
+      <Button fx:id="backToQueryListButton" layoutX="137.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToQueryList" prefHeight="26.0" prefWidth="124.0" text="Return to query list" />
+   </children>
+</AnchorPane>

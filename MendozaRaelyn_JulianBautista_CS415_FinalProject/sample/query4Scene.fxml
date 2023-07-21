@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <TableView fx:id="query4Tableview" layoutX="13.0" layoutY="158.0" prefHeight="415.0" prefWidth="599.0">
+            <columns>
+                <TableColumn fx:id="username2TableColumn" prefWidth="188.5" text="username" />
+                <TableColumn fx:id="title2TableColumn" prefWidth="425.0" text="title" />
+            </columns>
+        </TableView>
+        <Label fx:id="showQuery4" layoutX="26.0" layoutY="78.0" prefHeight="50.0" prefWidth="584.0" text="Text that Changes" wrapText="true" />
+        <Button fx:id="runQuery4Button" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#runQuery4Click" text="Run the query" />
+        <Button fx:id="backToQueryListButton" layoutX="137.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToQueryList" prefHeight="26.0" prefWidth="124.0" text="Return to query list" />
+    </children>
+</AnchorPane>

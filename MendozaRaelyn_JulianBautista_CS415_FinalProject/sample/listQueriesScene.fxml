@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="query1SceneButton" layoutX="91.0" layoutY="66.0" mnemonicParsing="false" onAction="#switchToQuery1Scene" prefHeight="26.0" prefWidth="104.0" text="Query 1" />
+      <Button fx:id="query2SceneButton" layoutX="91.0" layoutY="105.0" mnemonicParsing="false" onAction="#switchToQuery2Scene" prefHeight="26.0" prefWidth="104.0" text="Query 2" />
+      <Button fx:id="query3SceneButton" layoutX="91.0" layoutY="143.0" mnemonicParsing="false" onAction="#switchToQuery3Scene" prefHeight="26.0" prefWidth="104.0" text="Query 3" />
+      <Button fx:id="query4SceneButton" layoutX="91.0" layoutY="184.0" mnemonicParsing="false" onAction="#switchToQuery4Scene" prefHeight="26.0" prefWidth="104.0" text="Query 4" />
+      <Button fx:id="query5SceneButton" layoutX="91.0" layoutY="220.0" mnemonicParsing="false" onAction="#switchToQuery5Scene" prefHeight="26.0" prefWidth="104.0" text="Query 5" />
+      <Button fx:id="query6SceneButton" layoutX="91.0" layoutY="256.0" mnemonicParsing="false" onAction="#switchToQuery6Scene" prefHeight="26.0" prefWidth="104.0" text="Query 6" />
+      <Button fx:id="query7SceneButton" layoutX="91.0" layoutY="291.0" mnemonicParsing="false" onAction="#switchToQuery7Scene" prefHeight="26.0" prefWidth="104.0" text="Query 7" />
+      <Button fx:id="query8SceneButton" layoutX="91.0" layoutY="323.0" mnemonicParsing="false" onAction="#switchToQuery8Scene" prefHeight="26.0" prefWidth="104.0" text="Query 8" />
+      <Button fx:id="returnHomeButton" layoutX="64.0" layoutY="360.0" mnemonicParsing="false" onAction="#switchToHomeScreen" prefHeight="26.0" prefWidth="152.0" text="Return to home screen" />
+      <Label fx:id="selectQueryLabel" layoutX="100.0" layoutY="28.0" text="Select a query:" />
+   </children>
+</AnchorPane>

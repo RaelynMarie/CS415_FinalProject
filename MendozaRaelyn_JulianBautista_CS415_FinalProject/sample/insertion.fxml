@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox id="InsertMainContainer" alignment="CENTER" prefHeight="300.0" prefWidth="400.0" spacing="20.0" styleClass="insertApp-Container" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label styleClass="Insert_BookTitle-Form-Label" text="Book Title" />
+    <TextField fx:id="InsertBookTitleFormTextField" promptText="Enter Book Title" styleClass="Insert_BookTitle-Form-Field" text="Enter Book Title" />
+    <Label styleClass="Insert_BookTitle-Form-Label" text="Book Status" />
+    <ComboBox fx:id="BookStatusComboBoxInsert" prefWidth="150.0" promptText="Select Book Status" styleClass="Insert_BookTitle-Form-Field">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Completed" />
+                <String fx:value="Plan to Read" />
+                <String fx:value="Reading" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+
+    <Label fx:id="welcomeText" />
+    <Button mnemonicParsing="false" onAction="#insertToDatabaseButtonClick" styleClass="insert_form_Button" text="Submit" />
+   <Button fx:id="returnHomeButton2" layoutX="64.0" layoutY="360.0" mnemonicParsing="false" onAction="#switchToHomeScreen" prefHeight="26.0" prefWidth="152.0" text="Return to home screen" />
+</VBox>
